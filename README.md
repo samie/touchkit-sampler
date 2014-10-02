@@ -53,3 +53,7 @@ $ mvn jetty:run
 Finally open your browser and open the url
 http://localhost:8080/?gwt.codesvr=127.0.0.1:9997
 
+### License
+
+This sample is open source and licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+

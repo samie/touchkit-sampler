@@ -19,16 +19,11 @@ After these steps you have the application up and running at http://localhost:80
 ## Debugging the client-side code
 
 If you are modifying client-side code and you want to debug it using
-the gwt devmode, open one terminal an run the command:
+the gwt devmode, open one terminal an run the command ```mvn vaadin:run```
 
-$ mvn vaadin:run
+Then open another terminal and run: ```mvn jetty:run```
 
-Then open another terminal and run:
-
-$ mvn jetty:run
-
-Finally open your browser and open the url
-http://localhost:8080/?gwt.codesvr=127.0.0.1:9997
+Finally open your browser and open the url http://localhost:8080/?gwt.codesvr=127.0.0.1:9997
 
 ### License
 

@@ -1,47 +1,24 @@
--------------------------------------------------------------------
 TouchKitSampler Vaadin TouchKit app skeleton created by maven archetype
--------------------------------------------------------------------
+===========
 
-USING THE GENERATED PROJECT:
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-The project is pretty standard Maven web app project and should thus
-be compatible with practically all IDE's. The application stub
+The project is a standard Maven web app project and should thus
+be compatible with IDE's supporting Maven. The application stub
 contains usage examples of some basic components and also provides a
 method to serve different UI for desktop browsers.
 
-Packaging/installing the project
---------------------------------
+### Usage
 
-Run maven command:
+Make sure you have installed [Maven](http://maven.apache.org/) and [Git](http://git-scm.com/).
 
-$ mvn package
+    git clone https://github.com/vaadin-samples/touchkit-sampler.git
+    cd hello-world
+    mvn vaadin:compile jetty:run
+    
+After these steps you have the application up and running at http://localhost:8080/. Future starts require only ```mvn jetty:run``` as the widgetset is already compiled.
 
-Running the default package target generates war file. Also
-widgetset compilation is automatically done at this point.
+## Debugging the client-side code
 
-Running the app in development server
--------------------------------------
-
-The project has by default jetty plugin configure as a web server. It
-can be started with maven command:
-
-$ mvn vaadin:compile jetty:run
-
-Importing the project in eclipse
--------------------------------------
-
-You can use any IDE for editing your project, but we normally use eclipse,
-install Vaadin Eclipse Plugin if you have not done yet, and then run
-
-$ mvn eclipse:eclipse
-
-finally you can import your project in eclipse as usual.
-
-Debugging the client-side code
--------------------------------------
-
-If you are modigying client-side code and you want to debug it using
+If you are modifying client-side code and you want to debug it using
 the gwt devmode, open one terminal an run the command:
 
 $ mvn vaadin:run
@@ -56,4 +33,3 @@ http://localhost:8080/?gwt.codesvr=127.0.0.1:9997
 ### License
 
 This sample is open source and licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
-
